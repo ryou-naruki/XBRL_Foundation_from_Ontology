@@ -15,6 +15,7 @@ def make_day_list(start_date, end_date):
     
     return day_list
 
+# 有価証券報告書を取得してくる関数
 def make_doc_id_list(day_list):
     securities_report_doc_list = []
     for index, day in enumerate(day_list):
@@ -39,6 +40,7 @@ def make_doc_id_list(day_list):
                     
     return securities_report_doc_list
 
+# XBRLファイルをZIP形式でダウンロードする関数
 def download_xbrl_in_zip(securities_report_doc_list, number_of_lists):
     save_dir = "G:/マイドライブ/XBRL_file/"
     if not os.path.exists(save_dir):
@@ -58,9 +60,10 @@ def download_xbrl_in_zip(securities_report_doc_list, number_of_lists):
             print(f"Downloaded and Saved: {filename}")
         else:
             print(f"Failed to download file {doc_id}, status code: {res.status_code}")    
-        
+  
+# 上記2つの関数を実行する  
 def main():
-    # ▼集める期間
+    # 集める期間を設定する
     start_date = datetime.date(2024, 5, 1) # 随時変更
     end_date = datetime.date(2024, 5, 31) # 随時変更
     day_list = make_day_list(start_date, end_date)
