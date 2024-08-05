@@ -15,6 +15,7 @@ def make_day_list(start_date, end_date):
     
     return day_list
 
+# 有価証券報告書を取得してくる関数
 def make_doc_id_list(day_list):
     securities_report_DocAndFilename_list = []
     for index, day in enumerate(day_list):
@@ -42,6 +43,7 @@ def make_doc_id_list(day_list):
                     
     return securities_report_DocAndFilename_list
 
+# XBRLをダウンロードする関数
 def download_xbrl_in_zip(securities_report_DocAndFilename_list, number_of_lists):
 		# ▼ダウンロードする有報を保存しておく場所を指定。もしなければフォルダを作成
     save_dir = "/path/to/download/directory/"# あなたの保存先のパスに変更

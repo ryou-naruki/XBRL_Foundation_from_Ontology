@@ -61,9 +61,9 @@ def download_xbrl_in_zip(securities_report_doc_list, number_of_lists):
         else:
             print(f"Failed to download file {doc_id}, status code: {res.status_code}")    
   
-# 上記2つの関数を実行する  
+# 上記2つの関数を実行
 def main():
-    # 集める期間を設定する
+    # 集める期間を設定
     start_date = datetime.date(2024, 5, 1) # 随時変更
     end_date = datetime.date(2024, 5, 31) # 随時変更
     day_list = make_day_list(start_date, end_date)
