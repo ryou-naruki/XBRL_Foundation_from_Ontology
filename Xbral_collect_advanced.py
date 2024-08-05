@@ -35,7 +35,7 @@ def make_doc_id_list(day_list):
                 if ordinance_code =="010"and form_code =="030000":
                     print(json_data["results"][num]["filerName"], json_data["results"][num]["docDescription"],
                         json_data["results"][num]["docID"])
-                    #変更：doc_idとfilenameを辞書型で保有する
+                    #変更：doc_idとfilenameを辞書型で保有
                     data = {"doc_id":json_data["results"][num]["docID"],
                             "filename":json_data["results"][num]["filerName"]}
                     securities_report_DocAndFilename_list.append(data)
@@ -43,8 +43,8 @@ def make_doc_id_list(day_list):
     return securities_report_DocAndFilename_list
 
 def download_xbrl_in_zip(securities_report_DocAndFilename_list, number_of_lists):
-		# ▼ダウンロードする有報を保存しておく場所を指定。もしなければフォルダを作成する。
-    save_dir = "/path/to/download/directory/"# あなたの保存先のパスに変更してください。
+		# ▼ダウンロードする有報を保存しておく場所を指定。もしなければフォルダを作成
+    save_dir = "/path/to/download/directory/"# あなたの保存先のパスに変更
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
     
