@@ -17,5 +17,5 @@ requests 2.32.3
 ### 対象ファイル
 基本：xbrlfile_collect_basic.py
 
-応用：xbrlfile_collect_adovanced.py
+応用：xbrlfile_collect_advanced.py
 
