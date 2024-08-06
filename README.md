@@ -5,7 +5,7 @@
 # 環境
 Windows 11
 
-Google　Chrome
+Google Chrome
 
 Python　3.12.4
 
