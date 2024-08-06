@@ -4,8 +4,11 @@
 
 # 環境
 Windows 11
+
 Google　Chrome
+
 Python　3.12.4
+
 requests 2.32.3
 
 ## (3)大量のデータを自動でダウンロードしよう
