@@ -33,4 +33,4 @@ requests 2.32.3
 
 10社分を取得する：xbrlfile_financial_10companies.py
 
-コラム：xbrlfile_financial_10companies_columns.py
+正規表現を使用したコラム：xbrlfile_financial_10companies_columns.py
