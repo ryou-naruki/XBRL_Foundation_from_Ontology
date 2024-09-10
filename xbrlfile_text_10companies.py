@@ -17,7 +17,7 @@ xbrl_file_paths = [
     "xbrl_file\Xbrl_Search_20240821_152907\S100T58N\XBRL\PublicDoc\jpcrp030000-asr-001_E02274-000_2023-12-31_01_2024-03-28.xbrl"
 ]
 
-# 対象企業の事業等のリスクを取得
+# 対象企業のタグを取得
 key = "jpcrp_cor:BusinessRisksTextBlock"
 context_ref = "FilingDateInstant"
 
